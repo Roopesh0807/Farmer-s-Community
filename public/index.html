@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Chatting App</title>
-	</head>
-	<body>
-		<div class="join-container">
-			<header class="join-header">
-				<h1><i class="fas fa-comments"></i> KrishiSetu Farmer's Community</h1>
-			</header>
-			<main class="join-main">
-				<form action="chat.html">
-					<div class="form-control">
-						<label for="username">Username</label>
-						<input
-							type="text"
-							name="username"
-							id="username"
-							placeholder="Enter Your Name"
-							required
-						/>
-					</div>
-					<div class="form-control">
-						<label for="room">Chat Rooms</label>
-						<select name="room" id="room">
-							<option selected disabled>Please Select Any...</option>
-							<option value="Organic Farming">Organic Farming</option>
-							<option value="Crop Cultivation">Crop Cultivation</option>
-							<option value="Dairy & Livestock">Dairy & Livestock</option>
-							<option value="Agri-Tech & Innovations">Agri-Tech & Innovations</option>
-							<option value="Weather & Soil Discussions">Weather & Soil Discussions</option>
-							<option value="Market & Pricing Updates">Market & Pricing Updates</option>
-						</select>
-					</div>
-					<button type="submit" class="btn">Join Now</button>
-				</form>
-			</main>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>KrishiSetu Farmer's Community</title>
+  </head>
+  <body>
+    <div class="join-container">
+      <header class="join-header">
+        <img src="logo.jpg" alt="KrishiSetu Logo" class="logo" />
+        <h1>KRISHISETU FARMER'S COMMUNITY</h1>
+        <p>Connect, Share, and Grow Together</p>
+      </header>
+      <main class="join-main">
+        <form action="chat.html">
+          <div class="form-control">
+            <label for="username">Your Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="room">Choose a Topic</label>
+            <select name="room" id="room">
+              <option selected disabled>Select a Topic...</option>
+              <option value="Organic Farming">🌱 Organic Farming</option>
+              <option value="Crop Cultivation">🌾 Crop Cultivation</option>
+              <option value="Dairy & Livestock">🐄 Dairy & Livestock</option>
+              <option value="Agri-Tech & Innovations">🤖 Agri-Tech & Innovations</option>
+              <option value="Weather & Soil Discussions">🌦️ Weather & Soil Discussions</option>
+              <option value="Market & Pricing Updates">💹 Market & Pricing Updates</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Join Community</button>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>

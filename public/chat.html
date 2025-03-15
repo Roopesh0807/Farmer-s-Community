@@ -5,38 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Chat App</title>
+    <title>KrishiSetu Farmer's Community</title>
   </head>
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1><i class="fas fa-comments"></i> SimpleChat</h1>
-        <a id="leave-btn" class="leavebtn"><i class="fas fa-door-open"></i> Leave Room</a>
+        <img src="logo.jpg" alt="KrishiSetu Logo" class="logo" />
+        <h1>KrishiSetu Farmer's Community</h1>
+        <a id="leave-btn" class="leavebtn"><i class="fas fa-sign-out-alt"></i> Leave Room</a>
       </header>
       <main class="chat-main">
         <div class="chat-sidebar">
-          <h3><i class="fas fa-comments"></i> Room Name:</h3>
+          <h3><i class="fas fa-comments"></i> Room:</h3>
           <h2 id="room-name"></h2>
-          <h3><i class="fas fa-user-friends"></i> Current Users</h3>
+          <h3><i class="fas fa-user-friends"></i> Active Farmers</h3>
           <ul id="users"></ul>
         </div>
-        <div class="chat-messages"></div>
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages will be dynamically added here -->
+        </div>
       </main>
       <div class="chat-form-container">
         <form id="chat-form">
+          <label for="msg" class="sr-only">Type your message</label>
           <input
             id="msg"
             type="text"
-            placeholder="Enter Message"
+            placeholder="Type your message..."
+            aria-label="Type your message"
             required
-            autocomplete="off"
           />
-          <button class="btn"><i class="fas fa-reply"></i> Send</button>
+          <!-- <label for="file-input" class="file-btn">
+            <i class="fas fa-paperclip"></i>
+            <span class="sr-only">Attach a file</span>
+          </label>
+          <input
+            type="file"
+            id="file-input"
+            accept="image/*, .pdf, .doc, .docx"
+            aria-label="Attach a file"
+            style="display: none;"
+          /> -->
+          <button type="submit" class="btn" aria-label="Send message">
+            <i class="fas fa-paper-plane"></i> Send
+          </button>
         </form>
       </div>
     </div>
